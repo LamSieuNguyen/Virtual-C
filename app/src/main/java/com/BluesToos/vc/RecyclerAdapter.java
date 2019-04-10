@@ -14,9 +14,11 @@ import android.widget.Toast;
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageViewHolder> {
 
     private int[] images;
+    private String[] names;
 
-    public RecyclerAdapter(int[] images) {
+    public RecyclerAdapter(int[] images,String[] names) {
         this.images = images;
+        this.names = names;
     }
 
     @Override
@@ -30,7 +32,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
     public void onBindViewHolder(ImageViewHolder holder, final int position) {
         int image_id = images[position];
         holder.Album.setImageResource(image_id);
-        holder.AlbumTitle.setText("Image: " + position);
+        holder.AlbumTitle.setText(names[position]);
         holder.ll.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

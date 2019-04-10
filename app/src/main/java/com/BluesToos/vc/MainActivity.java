@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity
             frag_man.beginTransaction().replace(R.id.content_frame,new program_disc()).commit();
 
         }
-        else if (id == R.id. to_do) {
+        else if (id == R.id. things_to_do) {
             frag_man.beginTransaction().replace(R.id.content_frame,new Todo()).commit();
 
         }
