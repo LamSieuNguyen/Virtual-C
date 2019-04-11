@@ -1,6 +1,11 @@
 package com.BluesToos.vc;
 
+import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,15 +14,20 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import android.widget.Toast;
+
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageViewHolder> {
 
     private int[] images;
+    public View myView;
+    public int move =0;
 
     public RecyclerAdapter(int[] images) {
         this.images = images;
     }
+
 
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -36,12 +46,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
             public void onClick(View view){
                 Log.d("TAG?", "THIS WORKED YAYYYYYYYYYYYYYYYYYY");
                 //start new activity
+                //Intent mapIntent = new Intent(this, guideActivity.class);
+                Log.d("run", "crashed");
+                //myView = R.layout.guideactivity();
             }
 
         });
 
 
     }
+
+
 
     @Override
     public int getItemCount() {
@@ -61,4 +76,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
 
         }
     }
+
+
+
+
 }
+
