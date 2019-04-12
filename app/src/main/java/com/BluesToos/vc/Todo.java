@@ -20,7 +20,9 @@ public class Todo extends Fragment {
             R.drawable.hersheypark,R.drawable.newhersheystadium, R.drawable.newzooamerica};
 
     private String[] name = {"Butterfly Garden", "Hershey Candy Lane", "Hershey Park", "Hershey Stadium", "ZooAmerica"};
-
+    private String[] phones = {"8002377288","7175664400","7175334550","4","5"};
+    private String[] locs = {"381 W Governor Rd, Hershey, PA 17033","600 Walton Ave, Hummelstown, PA 17036","27 Ridge Rd, Hershey, PA 17033","4","5"};
+    private String[] webs = {"members1st.org","metrobankonline.co.uk","wellsfargo.com","4","5"};
 
     private RecyclerView.LayoutManager layoutManager;
 
@@ -35,7 +37,7 @@ public class Todo extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         thingstodorecyclerView.setHasFixedSize(true);
         thingstodorecyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images,name, this.getContext());
+        adapter = new RecyclerAdapter(images,name, locs, webs, phones, this.getContext());
         thingstodorecyclerView.setAdapter(adapter);
 
         return mynewView;

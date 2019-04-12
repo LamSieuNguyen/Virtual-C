@@ -6,13 +6,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class guideActivity extends Fragment {
+
+    String TAG = "HELP US";
 
     public static View myView;
 
@@ -26,20 +30,37 @@ public class guideActivity extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState);
+
         myView = inflater.inflate(R.layout.guideactivity, container, false);
+
+        Bundle bundle = getArguments();
+        Log.d(TAG,"BUNDLE: " + bundle);
+        int pos = getArguments().getInt("pos");
+        String[] names = getArguments().getStringArray("names");
+        String[] locs = getArguments().getStringArray("locs");
+        String[] webs = getArguments().getStringArray("webs");
+        String[] nums = getArguments().getStringArray("nums");
+        int[] images = getArguments().getIntArray("images");
+
+        ImageView pic = myView.findViewById(R.id.menuPic);
+        pic.setImageResource(images[pos]);
 
         loc = myView.findViewById(R.id.locButton);
         num = myView.findViewById(R.id.phoneButton);
         web = myView.findViewById(R.id.webButton);
 
         address = myView.findViewById(R.id.LocationTV);
+        address.setText(locs[pos]);
         phoneNumber = myView.findViewById(R.id.NumberTV);
+        phoneNumber.setText(nums[pos]);
         webUrl = myView.findViewById(R.id.UrlTV);
+        webUrl.setText(webs[pos]);
 
-        final String strLoc = address.getText().toString();
-        final String strNum = phoneNumber.getText().toString();
-        final String strURL = webUrl.getText().toString();
+        final String strLoc = locs[pos];
+        final String strNum = nums[pos];
+        final String strURL = webs[pos];
 
         loc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

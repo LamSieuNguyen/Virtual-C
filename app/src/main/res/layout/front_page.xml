@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@id/AddressTV"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="415 Harrisburg Ave, Lancaster PA"
+        android:text="745 W Governor Rd, Hershey, PA 17033"
         />
     <TextView
         android:id="@+id/PhoneTV"
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@id/PhoneTV"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="7174901282"
+        android:text= "(717) 533-4001"
         />
     <TextView
         android:id="@+id/WebTV"
@@ -108,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@id/WebTV"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="speedrun.com/Adamo"
+        android:text="https://www.rmhc-centralpa.org/"
         />
 
 
