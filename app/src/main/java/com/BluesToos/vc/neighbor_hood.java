@@ -16,6 +16,7 @@ public class neighbor_hood extends Fragment {
 
     private RecyclerView recyclerView;
     private int[] images = {R.drawable.members1,R.drawable.metro, R.drawable.wellsfargo};
+    private String[] names = {"Members 1st","Metro Bank","WellsFargo"};
 
     private RecyclerView.LayoutManager layoutManager;
 
@@ -30,7 +31,7 @@ public class neighbor_hood extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images, this.getContext());
+        adapter = new RecyclerAdapter(images, names, this.getContext());
         recyclerView.setAdapter(adapter);
         return myView;
     }
