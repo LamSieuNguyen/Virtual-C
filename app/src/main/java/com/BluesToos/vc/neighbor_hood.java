@@ -3,7 +3,7 @@ package com.BluesToos.vc;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,7 +30,7 @@ public class neighbor_hood extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images);
+        adapter = new RecyclerAdapter(images, this.getContext());
         recyclerView.setAdapter(adapter);
         return myView;
     }

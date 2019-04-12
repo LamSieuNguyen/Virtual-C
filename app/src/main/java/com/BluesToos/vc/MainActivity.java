@@ -1,6 +1,6 @@
 package com.BluesToos.vc;
 
-import android.app.FragmentManager;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,8 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public FragmentManager frag_man = getSupportFragmentManager();
+    public static int Change = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +65,9 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             return true;
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -73,9 +78,8 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        FragmentManager frag_man = getFragmentManager();
 
-        if (id == R.id.front_page) {
+        if (id == R.id.front_page ) {
             frag_man.beginTransaction().replace(R.id.content_frame,new front_page()).commit();
 
         } else if (id == R.id.neighboor_guide) {
@@ -115,7 +119,7 @@ public class MainActivity extends AppCompatActivity
             frag_man.beginTransaction().replace(R.id.content_frame,new program_disc()).commit();
 
         }
-        else if (id == R.id. to_do) {
+        else if (id == R.id. things_to_do) {
             frag_man.beginTransaction().replace(R.id.content_frame,new Todo()).commit();
 
         }
