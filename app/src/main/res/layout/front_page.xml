@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/backronald"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -59,6 +60,8 @@
         app:layout_constraintTop_toBottomOf="@id/LLID"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/ic_launcher_background"
+
         android:text="Address: "
         />
     <TextView
@@ -69,6 +72,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="745 W Governor Rd, Hershey, PA 17033"
+        android:textColor="@color/ic_launcher_background"
+
         />
     <TextView
         android:id="@+id/PhoneTV"
@@ -79,6 +84,8 @@
         app:layout_constraintTop_toBottomOf="@id/LocationTV"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/ic_launcher_background"
+
         android:text="Phone Number: "
         />
     <TextView
@@ -89,6 +96,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text= "(717) 533-4001"
+        android:textColor="@color/ic_launcher_background"
+
         />
     <TextView
         android:id="@+id/WebTV"
@@ -99,6 +108,8 @@
         app:layout_constraintTop_toBottomOf="@id/NumberTV"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/ic_launcher_background"
+
         android:text="Website: "
         />
     <TextView
@@ -109,7 +120,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="https://www.rmhc-centralpa.org/"
+        android:textColor="@color/ic_launcher_background"
+
         />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="377dp"
+        android:layout_height="367dp"
+        app:srcCompat="@drawable/ronaldlogo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="3dp" />
 
 
 </android.support.constraint.ConstraintLayout>
