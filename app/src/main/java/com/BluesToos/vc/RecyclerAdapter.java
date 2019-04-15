@@ -15,10 +15,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
 
     private int[] images;
     private String[] names;
+   // private String[] titles;
 
     public RecyclerAdapter(int[] images,String[] names) {
         this.images = images;
         this.names = names;
+      //  this.titles = titles;
     }
 
     @Override

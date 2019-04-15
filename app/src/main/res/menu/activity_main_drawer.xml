@@ -48,6 +48,12 @@
             android:id="@+id/things_to_do"
             android:icon="@drawable/ic_menu_manage"
             android:title="Things To Do" />
+        <item
+            android:id="@+id/meettheteam"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Meet the Team"/>
+
+
     </group>
 
 

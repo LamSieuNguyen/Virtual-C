@@ -2,10 +2,6 @@ package com.BluesToos.vc;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -92,17 +88,17 @@ public class MainActivity extends AppCompatActivity
             frag_man.beginTransaction().replace(R.id.content_frame,new calendar()).commit();
 
 
-        } else if (id == R.id. notifications) {
+        } else if (id == R.id.notifications) {
             frag_man.beginTransaction().replace(R.id.content_frame,new notifications()).commit();
 
 
         }
-        else if (id == R.id. housePlan) {
+        else if (id == R.id.housePlan) {
             frag_man.beginTransaction().replace(R.id.content_frame,new house_floor_plans()).commit();
 
 
         }
-        else if (id == R.id. houseRules) {
+        else if (id == R.id.houseRules) {
             frag_man.beginTransaction().replace(R.id.content_frame,new house_rules()).commit();
 
 
@@ -111,19 +107,19 @@ public class MainActivity extends AppCompatActivity
             frag_man.beginTransaction().replace(R.id.content_frame,new religious_org()).commit();
 
         }
-        else if (id == R.id. prog_disc) {
+        else if (id == R.id.prog_disc) {
             frag_man.beginTransaction().replace(R.id.content_frame,new program_disc()).commit();
 
         }
-        else if (id == R.id. things_to_do) {
+        else if (id == R.id.things_to_do) {
             frag_man.beginTransaction().replace(R.id.content_frame,new Todo()).commit();
 
         }
-        else if (id == R.id. meet_team) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new meet_team()).commit();
+        else if (id == R.id.meettheteam) {
+            frag_man.beginTransaction().replace(R.id.content_frame,new meettheteam()).commit();
 
         }
-        else if (id == R.id. house_faq){
+        else if (id == R.id.house_faq){
             frag_man.beginTransaction().replace(R.id.content_frame,new houseFaq()).commit();
 
         }
