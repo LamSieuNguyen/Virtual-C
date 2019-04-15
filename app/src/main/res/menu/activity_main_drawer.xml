@@ -6,47 +6,51 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/front_page"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="front_page" />
+            android:icon="@drawable/house"
+            android:title="About US" />
         <item
             android:id="@+id/neighboor_guide"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="neighborguide" />
+            android:icon="@drawable/village"
+            android:title="Neighborhood Guide" />
         <item
             android:id="@+id/ps_health_center"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="medcenter" />
+            android:icon="@drawable/hospital"
+            android:title="Medical Center" />
         <item
             android:id="@+id/notifications"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="notifications" />
+            android:icon="@drawable/alarm"
+            android:title="Notifications" />
         <item
             android:id="@+id/houseRules"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/document"
             android:title="House Rules" />
         <item
             android:id="@+id/housePlan"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/sketch"
             android:title="House Plan" />
         <item
             android:id="@+id/house_faq"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/document"
             android:title="House Faqs" />
         <item
             android:id="@+id/prog_disc"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/document"
             android:title="Program Description" />
         <item
             android:id="@+id/religious_org"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/praying"
             android:title="Religious Organizations" />
         <item
             android:id="@+id/ronald_family_room"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="family_room" />
+            android:icon="@drawable/house"
+            android:title="Family Room" />
+        <item
+            android:id="@+id/meet_team"
+            android:icon="@drawable/team"
+            android:title="Meet The Team" />
         <item
             android:id="@+id/things_to_do"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/playground"
             android:title="Things To Do" />
     </group>
 
