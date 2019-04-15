@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity
         //actionBar = getSupportActionBar();
         //actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ca0606")));
         setSupportActionBar(toolbar);
+        frag_man.beginTransaction().replace(R.id.content_frame,new front_page()).commit();
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -137,6 +138,7 @@ public class MainActivity extends AppCompatActivity
             frag_man.beginTransaction().replace(R.id.content_frame,new houseFaq()).commit();
 
         }
+
 
 
 
