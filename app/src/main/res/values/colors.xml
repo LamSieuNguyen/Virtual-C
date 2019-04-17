@@ -3,5 +3,7 @@
     <color name="colorPrimary">#F51818</color>
     <color name="colorPrimaryDark">#C41414</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorGold">#FFDD04</color>
+    <color name="colorGold">#FFC100</color>
+    <color name="colorWhite">#FF3A3A</color>
+
 </resources>
