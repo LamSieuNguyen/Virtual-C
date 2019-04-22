@@ -108,11 +108,7 @@ public class MainActivity extends AppCompatActivity
 
 
         }
-        else if (id == R.id. housePlan) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new house_floor_plans()).commit();
 
-
-        }
         else if (id == R.id. houseRules) {
             frag_man.beginTransaction().replace(R.id.content_frame,new house_rules()).commit();
 

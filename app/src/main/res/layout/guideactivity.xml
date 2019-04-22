@@ -12,12 +12,11 @@
 
         android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="267dp"
+        android:layout_height="266dp"
+
         android:layout_marginBottom="352dp"
-        android:background="@drawable/backronald"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@android:color/white"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -44,9 +43,10 @@
     <LinearLayout
         android:id="@+id/LLID"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="88dp"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorGold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -66,7 +66,7 @@
             android:background="@drawable/custombutton"
             android:drawableLeft="@drawable/placeholder"
             android:gravity="center"
-            android:paddingLeft="22dp"
+            android:padding="18dp"
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
 
@@ -89,7 +89,7 @@
             android:background="@drawable/custombutton"
             android:drawableLeft="@drawable/telephone"
             android:gravity="center"
-            android:paddingLeft="22dp"
+            android:padding="22dp"
 
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
@@ -114,7 +114,7 @@
             android:background="@drawable/custombutton"
             android:drawableLeft="@drawable/internet"
             android:gravity="center"
-            android:paddingLeft="22dip"
+            android:paddingLeft="18dip"
 
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
@@ -136,20 +136,23 @@
     <LinearLayout
         android:id="@+id/Text1"
         android:layout_width="match_parent"
-        android:layout_height="355dp"
+        android:layout_height="wrap_content"
 
         android:background="@color/colorWhite"
         android:gravity="center"
+        android:padding="70dp"
+
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LLID"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.514">
 
 
         />
+
         <TextView
             android:id="@+id/AddressTV"
             android:layout_width="wrap_content"

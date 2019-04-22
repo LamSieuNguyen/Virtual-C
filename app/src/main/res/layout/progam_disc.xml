@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/backronald"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
 
     android:layout_width="match_parent" android:layout_height="match_parent">
+
+
     <TextView
-        android:id="@+id/prog_disc"
+        android:id="@+id/housePlan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="prog_disc"
+        android:text="house rules"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="72dp"/>
+
 </RelativeLayout>
