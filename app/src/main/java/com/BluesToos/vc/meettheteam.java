@@ -16,8 +16,11 @@ public class meettheteam extends Fragment {
     View mynewView;
 
     private RecyclerView meetteamrecyclerView;
-    private int[] images = {R.drawable.butterfly, R.drawable.newhersheycandylane,
-            R.drawable.hersheypark,R.drawable.newhersheystadium, R.drawable.newzooamerica};
+    private int[] images = {R.drawable.alyssanoel, R.drawable.amyleonard,
+            R.drawable.bonnieluz,R.drawable.whitebackground, R.drawable.whitebackground, R.drawable.colinpowell,
+            R.drawable.whitebackground,R.drawable.debstegall,R.drawable.heidimurray,R.drawable.whitebackground,R.drawable.whitebackground,
+            R.drawable.karlamitchell,R.drawable.whitebackground,R.drawable.whitebackground,R.drawable.whitebackground,R.drawable.whitebackground,
+            R.drawable.whitebackground,R.drawable.rachelclippinger,R.drawable.whitebackground};
 
     private String[] name = {"Alyssa", "Amy", "Bonnie", "Brenda", "Christine", "Colin", "Deb J.", "Deb S.", " Heidi", "Iona"
     ,"Jen", "Karla", "Leeann", "Loretta", " Lori", "Michelle", "Patrice", "Rachel", "Teresa"};
