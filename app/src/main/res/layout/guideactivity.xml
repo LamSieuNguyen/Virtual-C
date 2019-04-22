@@ -3,126 +3,240 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/backronald"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
 
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/menuPic"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="28dp"
-        android:scaleType="fitXY"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp" />
-
-
+    >
 
     <LinearLayout
-        android:id="@+id/LLID"
-        android:layout_height="wrap_content"
+
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="267dp"
+        android:layout_marginBottom="352dp"
+        android:background="@drawable/backronald"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/menuPic"
+            android:layout_width="369dp"
+            android:layout_height="280dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintHorizontal_bias="0.38"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+             />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLID"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="88dp"
+        android:background="@color/colorGold"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_alignParentBottom="true">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent ">
+
         <Button
             android:id="@+id/locButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:drawableLeft="@drawable/placeholder"
+            android:gravity="center"
+            android:paddingLeft="22dp"
+            android:scaleType="fitCenter"
+            android:shadowColor="#A8A8A8"
+
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="Directions"
-            android:layout_weight="1"
-            />
+
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/phoneButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/locButton"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:drawableLeft="@drawable/telephone"
+            android:gravity="center"
+            android:paddingLeft="22dp"
+
+            android:scaleType="fitCenter"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:textColor="#FFFFFF"
+
+            android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="Call"
-            android:layout_weight="1"
-            />
+            app:layout_constraintTop_toBottomOf="@id/locButton" />
 
         <Button
             android:id="@+id/webButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/phoneButton"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:drawableLeft="@drawable/internet"
+            android:gravity="center"
+            android:paddingLeft="22dip"
+
+            android:scaleType="fitCenter"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:textColor="#FFFFFF"
+
+            android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="Website"
-            android:layout_weight="1"
-            />
+            app:layout_constraintTop_toBottomOf="@id/phoneButton" />
+
+
 
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/AddressTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:paddingTop="50dp"
-        app:layout_constraintTop_toBottomOf="@id/LLID"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Address: "
-        />
-    <TextView
-        android:id="@+id/LocationTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/AddressTV"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="415 Harrisburg Ave, Lancaster PA"
-        />
-    <TextView
-        android:id="@+id/PhoneTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:paddingTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/LocationTV"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Phone Number: "
-        />
-    <TextView
-        android:id="@+id/NumberTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/PhoneTV"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="7174901282"
-        />
-    <TextView
-        android:id="@+id/WebTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:paddingTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/NumberTV"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Website: "
-        />
-    <TextView
-        android:id="@+id/UrlTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/WebTV"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="speedrun.com/Adamo"
-        />
+    <LinearLayout
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
 
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LLID"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        />
+        <TextView
+            android:id="@+id/AddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:text="Address: "
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@id/LocationTV"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Text1" />
+
+        <TextView
+            android:id="@+id/LocationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="745 W Governor Rd, Hershey, PA 17033"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AddressTV"
+
+            />
+
+        <TextView
+            android:id="@+id/PhoneTV"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="Phone Number: "
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/LocationTV" />
+
+        <TextView
+            android:id="@+id/NumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="(717) 533-4001"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PhoneTV"
+
+            />
+
+        <TextView
+            android:id="@+id/WebTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="Website: "
+            android:textColor="@color/ic_launcher_background"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/NumberTV" />
+
+        <TextView
+            android:id="@+id/UrlTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.rmhc-centralpa.org/"
+
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/WebTV"
+
+            />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
