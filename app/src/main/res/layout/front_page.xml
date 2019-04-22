@@ -4,12 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backronald">
+    android:background="@android:color/white"
 
+    >
+
+    <LinearLayout
+
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_marginBottom="352dp"
+        android:background="@drawable/backronald"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="369dp"
+            android:layout_height="280dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintHorizontal_bias="0.38"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/ronaldlogo" />
+
+
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/LLID"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="85dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="88dp"
         android:background="@color/colorGold"
@@ -97,49 +132,47 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="369dp"
-        android:layout_height="280dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toBottomOf="@id/LLID"
-        app:layout_constraintHorizontal_bias="0.38"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/ronaldlogo" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="381dp"
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
         app:layout_constraintTop_toBottomOf="@id/LLID"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        android:background="@color/colorWhite"
-        tools:layout_editor_absoluteY="350dp">
+        app:layout_constraintVertical_bias="1.0">
 
+
+             />
         <TextView
             android:id="@+id/AddressTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="50dp"
+            android:paddingTop="0dp"
             android:text="Address: "
             android:textColor="@color/ic_launcher_background"
+            android:textSize="20dp"
             android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@id/LocationTV"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
- />
+            app:layout_constraintTop_toTopOf="@id/Text1" />
 
         <TextView
             android:id="@+id/LocationTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:text="745 W Governor Rd, Hershey, PA 17033"
             android:textColor="@color/ic_launcher_background"
+            android:textSize="15dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/AddressTV"
@@ -149,10 +182,13 @@
         <TextView
             android:id="@+id/PhoneTV"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:paddingTop="30dp"
             android:text="Phone Number: "
             android:textColor="@color/ic_launcher_background"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -163,8 +199,10 @@
             android:id="@+id/NumberTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:text="(717) 533-4001"
             android:textColor="@color/ic_launcher_background"
+            android:textSize="15dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/PhoneTV"
@@ -178,6 +216,8 @@
             android:paddingTop="30dp"
             android:text="Website: "
             android:textColor="@color/ic_launcher_background"
+
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -189,7 +229,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="https://www.rmhc-centralpa.org/"
+
             android:textColor="@color/ic_launcher_background"
+            android:textSize="15dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/WebTV"
