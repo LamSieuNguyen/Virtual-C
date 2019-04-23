@@ -50,8 +50,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
         mContext =context;
     }
 
-    public RecyclerAdapter(String[] names, String[] as, Context context){
+    public RecyclerAdapter(int[] images, String[] names, String[] as, Context context){
         type = 3;
+        this.images = images;
         this.names = names;
         this.as = as;
         mContext = context;
@@ -128,7 +129,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
                 holder.AlbumTitle.setText(names[position]);
                 break;
             case 3:
-                Log.d(TAG,"CASE 3 BIND VIEW");
+                Log.d(TAG,"CASE 3 BIND VIEW: " + names[position]);
+                int image_id3 = images[0];
+                holder.Album.setImageResource(image_id3);
                 holder.AlbumTitle.setText(names[position]);
                 holder.Ans.setText(as[position]);
                 break;

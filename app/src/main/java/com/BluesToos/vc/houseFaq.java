@@ -19,8 +19,10 @@ public class houseFaq extends Fragment {
 
     private RecyclerView recyclerView;
 
+
     private String[] Qs = {"The question is how the fuck does this work","How do you kill yourself?","Do I hate my life?"};
     private String[] As = {"The answer is it doesn't","Noose, gun, poisen or slitting your wrists","Absofuckinglutely!!"};
+    private int[] images = {R.drawable.questionmark};
 
     private RecyclerView.LayoutManager layoutManager;
 
@@ -36,7 +38,7 @@ public class houseFaq extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
 
-        adapter = new RecyclerAdapter(Qs, As, this.getContext());
+        adapter = new RecyclerAdapter(images, Qs, As, this.getContext());
 
         recyclerView.setAdapter(adapter);
         return myView2;
