@@ -92,12 +92,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.neighboor_guide) {
             frag_man.beginTransaction().replace(R.id.content_frame,new neighbor_hood()).commit();
 
-        } else if (id == R.id.health_center) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new medcenter()).commit();
-
-        } else if (id == R.id.family_room) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new famRoom()).commit();
-
 
         } else if (id == R.id.calendar) {
             frag_man.beginTransaction().replace(R.id.content_frame,new calendar()).commit();
@@ -108,15 +102,6 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        else if (id == R.id.houseRules) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new house_rules()).commit();
-
-
-        }
-        else if (id == R.id.religious_org) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new religious_org()).commit();
-
-        }
         else if (id == R.id.prog_disc) {
             frag_man.beginTransaction().replace(R.id.content_frame,new program_disc()).commit();
 
