@@ -27,18 +27,27 @@ public class neighbor_hood extends Fragment {
     "Hummelstown Post Office","CocoaPlex", "Tanger Outlets", "Harrisburg Mall", "Colonial Park Mall", "HIA Airport", "HMC Fitness Center",
     "Supercuts", "Holiday Hair", "SportClips"};
     private String[] phones = {"8002377288","7175664400","7175334550", "7175341300","7175332963"," 7173120729","7175666041","7178351919",
-            "8145717143","7175334190","7175337159","7175618402","7175584150","7173120725","7175332447","7175336445" };
+            "8145717143","7175334190","7175337159","7175618402","7175584150","7173120725","7175332447","7175336445","8002758777","8002758777","7173121300",
+    "7173927260", "0000000000","0000000000","0000000000","7175317075","7175830525","7175349819","7172201738"};
+
     private String[] locs = {"381 W Governor Rd, Hershey, PA 17033","600 Walton Ave, Hummelstown, PA 17036","27 Ridge Rd, Hershey, PA 17033","731 Cherry Dr Ste 2, Hershey, PA 17033"
     ,"1130 Mae St, Hummelstown, PA 17036","1250 Cocoa Ave, Hershey, PA 17033","611 E Main St, Hummelstown, PA 17036","16 Briarcrest Square, Hershey, PA 17033",
     "Park, 100 West Hersheypark Drive Founders Way, Hershey, PA 17033","1000 Reese Ave, Hershey, PA 17033","102 W Chocolate Ave, Hershey, PA 17033",
             "6535 Grayson Rd, Harrisburg, PA 17111","4600 High Pointe Blvd, Harrisburg, PA 17111","1250 Cocoa Ave, Hershey, PA 17033", "1130 Mae St, Hummelstown, PA 17036",
-            "731 Cherry Dr, Hershey, PA 17033"};
+            "731 Cherry Dr, Hershey, PA 17033", "50 N Linden Rd Ofc, Hershey, PA 17033","448 Walton Ave, Hummelstown, PA 17036","1150 Cocoa Ave, Hershey, PA 17033",
+    "311 Stanley K Tanger Dr, Lancaster, PA 17602","3501 Paxton St, Harrisburg, PA 17111","4600 Jonestown Rd, Harrisburg, PA 17109","1 Terminal Dr, Middletown, PA 17057",
+            "30 Conference Dr, Hershey, PA 17033","593 E Main St, Hummelstown, PA 17036","724 W Chocolate Ave, Hershey, PA 17033","763 Middletown Rd, Hummelstown, PA 17036"};
+
     private String[] webs = {"members1st.org","metrobankonline.co.uk","wellsfargo.com", "https://hersheypharmacy.com/", "https://www.weismarkets.com/pharmacy-services?q-pharmacy%2F=",
     "https://stores.giantfoodstores.com/pa/hershey/1250-cocoa-ave","https://www.mcdonalds.com/us/en-us/location/pa/hummelstown/rt-39-at-rt-322/2837.html?cid=RF:YXT:GMB::Clicks",
             "http://www.piazzasorrento.com/","https://order.subway.com/?r=1432328590","https://www.friendlysrestaurants.com/restaurants/friendlys-hershey-17033/?id=756",
             "http://feniccis.com/","https://www.walmart.com/store/1591/harrisburg-pa/details","https://www.target.com/sl/harrisburg-east/2186",
             "https://stores.giantfoodstores.com/pa/hershey/1250-cocoa-ave", "https://www.weismarkets.com/stores#/4406","https://www.karnsfoods.com/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=hershey",
-    ""};
+    "https://tools.usps.com/go/POLocatorDetailsAction!input.action?&radius=20&locationType=po&locationTypeQ=po&locationID=1366824&utm_source=google-my-business-url&utm_medium=search&utm_campaign=yext",
+    "https://tools.usps.com/go/POLocatorDetailsAction!input.action?&radius=20&locationType=po&locationTypeQ=po&locationID=1367631&utm_source=google-my-business-url&utm_medium=search&utm_campaign=yext",
+    "https://www.cocoaplexcinema.net/","https://www.tangeroutlet.com/lancaster","http://www.shopharrisburgmall.com/","https://www.colonialparkmall.com/",
+            "http://www.flyhia.com/","http://www2.med.psu.edu/fitnesscenter/","https://www.supercuts.com/locations/pa/hummelstown/park-village-haircuts-80625.html",
+    "https://www.signaturestyle.com/locations/pa/hershey/holiday-hair-hershey-plaza-haircuts-65116.html","https://haircutmenhersheyhummelstownpa.com/?utm_source=Rio&utm_medium=GMB"};
 
     private RecyclerView.LayoutManager layoutManager;
 

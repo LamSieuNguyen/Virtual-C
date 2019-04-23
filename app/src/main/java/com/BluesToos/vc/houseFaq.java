@@ -20,7 +20,8 @@ public class houseFaq extends Fragment {
     private RecyclerView recyclerView;
 
 
-    private String[] Qs = {"The question is how the fuck does this work","How do you kill yourself?","Do I hate my life?"};
+    private String[] Qs = {"What is your Wi-Fi password?","Where can I put my trash? ","Where can I smoke?","How can I support RMHC-CP?","How can I sign up to volunteer for the guest chef, baking or lunch programs?"
+    ,"How do I confirm my room on the first day I’d like to stay?","Why can’t I have food in my room?"};
     private String[] As = {"The answer is it doesn't","Noose, gun, poisen or slitting your wrists","Absofuckinglutely!!"};
     private int[] images = {R.drawable.questionmark};
 
