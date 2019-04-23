@@ -106,13 +106,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.notifications) {
             frag_man.beginTransaction().replace(R.id.content_frame,new notifications()).commit();
 
-
         }
-        else if (id == R.id.housePlan) {
-            frag_man.beginTransaction().replace(R.id.content_frame,new house_floor_plans()).commit();
 
-
-        }
         else if (id == R.id.houseRules) {
             frag_man.beginTransaction().replace(R.id.content_frame,new house_rules()).commit();
 
@@ -131,7 +126,7 @@ public class MainActivity extends AppCompatActivity
             frag_man.beginTransaction().replace(R.id.content_frame,new Todo()).commit();
 
         }
-        else if (id == R.id.meettheteam) {
+        else if (id == R.id.meet_team) {
             frag_man.beginTransaction().replace(R.id.content_frame,new meet_team()).commit();
 
         }

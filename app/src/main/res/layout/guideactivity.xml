@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
     android:background="@android:color/white"
 
     >
@@ -11,13 +12,12 @@
     <LinearLayout
 
         android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="267dp"
-        android:layout_marginBottom="352dp"
-        android:background="@drawable/backronald"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="fill_parent"
+        android:layout_weight="0.1"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/LLID"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -26,28 +26,32 @@
 
         <ImageView
             android:id="@+id/menuPic"
-            android:layout_width="369dp"
-            android:layout_height="280dp"
-            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
             android:layout_marginBottom="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/image"
-            app:layout_constraintHorizontal_bias="0.38"
+            android:maxWidth="350dp"
+            android:maxHeight="350dp"
 
+            app:layout_constraintBottom_toBottomOf="@id/image"
             app:layout_constraintLeft_toLeftOf="parent"
 
             app:layout_constraintRight_toRightOf="parent"
-             />
+            />
 
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/LLID"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="0.1"
+
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="88dp"
         android:background="@color/colorGold"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -66,7 +70,7 @@
             android:background="@drawable/custombutton"
             android:drawableLeft="@drawable/placeholder"
             android:gravity="center"
-            android:paddingLeft="22dp"
+            android:padding="18dp"
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
 
@@ -89,7 +93,7 @@
             android:background="@drawable/custombutton"
             android:drawableLeft="@drawable/telephone"
             android:gravity="center"
-            android:paddingLeft="22dp"
+            android:padding="18dp"
 
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
@@ -114,7 +118,7 @@
             android:background="@drawable/custombutton"
             android:drawableLeft="@drawable/internet"
             android:gravity="center"
-            android:paddingLeft="22dip"
+            android:padding="18dip"
 
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
@@ -129,27 +133,30 @@
             app:layout_constraintTop_toBottomOf="@id/phoneButton" />
 
 
-
     </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/Text1"
-        android:layout_width="match_parent"
-        android:layout_height="355dp"
+
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
 
         android:background="@color/colorWhite"
         android:gravity="center"
         android:orientation="vertical"
+        android:padding="50dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LLID"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.514">
 
 
         />
+
         <TextView
             android:id="@+id/AddressTV"
             android:layout_width="wrap_content"

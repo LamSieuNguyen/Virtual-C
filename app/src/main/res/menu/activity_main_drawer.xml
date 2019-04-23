@@ -22,15 +22,12 @@
             android:title="Notifications" />
         <item
             android:id="@+id/houseRules"
-            android:icon="@drawable/document"
+            android:icon="@drawable/catalogue"
             android:title="House Rules" />
-        <item
-            android:id="@+id/housePlan"
-            android:icon="@drawable/sketch"
-            android:title="House Plan" />
+
         <item
             android:id="@+id/house_faq"
-            android:icon="@drawable/document"
+            android:icon="@drawable/faqs"
             android:title="House Faqs" />
         <item
             android:id="@+id/prog_disc"
