@@ -16,11 +16,11 @@ public class neighbor_hood extends Fragment {
 
     private RecyclerView recyclerView;
     private int[] images = {R.drawable.members1,R.drawable.metro, R.drawable.wellsfargo,R.drawable.hersheypharmacy,
-            R.drawable.newweis,R.drawable.newgiant,R.drawable.mcdonalds,R.drawable.piazzasorrento,R.drawable.subbway,R.drawable.friendlys,
-            R.drawable.newfenniccis,R.drawable.newwalmart,R.drawable.tarrget,R.drawable.newgiant,R.drawable.newweis,R.drawable.newkarns,
-            R.drawable.newpostoffice,
-            R.drawable.hummelstownpostoffice,R.drawable.cocoaplex,R.drawable.newtanger,R.drawable.harrisburgmall,R.drawable.newcolonial,
-            R.drawable.haiairport,R.drawable.hmcfitness,R.drawable.newsupercuts,R.drawable.holidayhair,R.drawable.newsportclips};
+            R.drawable.weispharm,R.drawable.newgiant,R.drawable.mcdonalds,R.drawable.piazzasorrento,R.drawable.subbway,R.drawable.friendlys,
+            R.drawable.fenn,R.drawable.newwalmart,R.drawable.tarrget,R.drawable.newgiant,R.drawable.weispharm,R.drawable.finalkarns,
+            R.drawable.postoffice2,
+            R.drawable.hummelstownpostoffice,R.drawable.cocoaplex,R.drawable.tangeroutlets2,R.drawable.harrisburgmall,R.drawable.finalcolonial,
+            R.drawable.finalharrisburgairport,R.drawable.finalfitness,R.drawable.finalsupercuts,R.drawable.finalhairsolon,R.drawable.newsportclips};
 
     private String[] names = {"Members 1st","Metro Bank","WellsFargo", "Hershey Pharmacy", "Weis Pharmacy", "Giant Pharmacy"
     ,"McDonald’s","Piazza Sorrento", "Subway","Friendly’s", "Fenicci’s","Walmart", "Target", "Giant", "Weis", "Karns", "Hershey Post Office",
