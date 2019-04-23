@@ -12,19 +12,16 @@
             android:id="@+id/neighboor_guide"
             android:icon="@drawable/village"
             android:title="Neighborhood Guide" />
-        <item
-            android:id="@+id/ps_health_center"
-            android:icon="@drawable/hospital"
-            android:title="Medical Center" />
+
         <item
             android:id="@+id/notifications"
             android:icon="@drawable/alarm"
             android:title="Notifications" />
-        <item
-            android:id="@+id/houseRules"
-            android:icon="@drawable/catalogue"
-            android:title="House Rules" />
 
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/calendar"
+            android:title="Calendar" />
         <item
             android:id="@+id/house_faq"
             android:icon="@drawable/faqs"
@@ -33,14 +30,7 @@
             android:id="@+id/prog_disc"
             android:icon="@drawable/document"
             android:title="Program Description" />
-        <item
-            android:id="@+id/religious_org"
-            android:icon="@drawable/praying"
-            android:title="Religious Organizations" />
-        <item
-            android:id="@+id/ronald_family_room"
-            android:icon="@drawable/house"
-            android:title="Family Room" />
+
         <item
             android:id="@+id/meet_team"
             android:icon="@drawable/team"
