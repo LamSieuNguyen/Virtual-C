@@ -9,8 +9,8 @@
     android:elevation = "12dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:scaleType="fitXY"
         android:id="@+id/album"
         />
@@ -20,12 +20,18 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:gravity="center"
-        android:textSize="18dp"
+        android:textSize="25dp"
+        android:text="TEST QUESTION"
         android:textStyle="bold"
         android:id="@+id/album_title"/>
+
     <TextView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="TEST ANSWER"
+        android:textSize="25dp"
         android:id="@+id/ans"/>
 
 </LinearLayout>
