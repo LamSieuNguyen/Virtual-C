@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.Size;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,11 +17,11 @@ public class meettheteam extends Fragment {
     View mynewView;
 
     private RecyclerView meetteamrecyclerView;
-    private int[] images = {R.drawable.alyssanoel, R.drawable.amyleonard,
-            R.drawable.bonnieluz,R.drawable.whitebackground, R.drawable.whitebackground, R.drawable.colinpowell,
-            R.drawable.whitebackground,R.drawable.debstegall,R.drawable.heidimurray,R.drawable.whitebackground,R.drawable.whitebackground,
-            R.drawable.karlamitchell,R.drawable.whitebackground,R.drawable.whitebackground,R.drawable.whitebackground,R.drawable.whitebackground,
-            R.drawable.whitebackground,R.drawable.rachelclippinger,R.drawable.whitebackground};
+    private int[] images = {R.drawable.alyssa, R.drawable.amy,
+            R.drawable.bonnie,R.drawable.brenda, R.drawable.whitebackground, R.drawable.colin,
+            R.drawable.whitebackground,R.drawable.debs,R.drawable.heidi,R.drawable.iona,R.drawable.jen,
+            R.drawable.karla,R.drawable.leeann,R.drawable.loretta,R.drawable.lori,R.drawable.michelle,
+            R.drawable.patrice,R.drawable.rachel,R.drawable.teresa};
 
     private String[] name = {"Alyssa", "Amy", "Bonnie", "Brenda", "Christine", "Colin", "Deb J.", "Deb S.", " Heidi", "Iona"
     ,"Jen", "Karla", "Leeann", "Loretta", " Lori", "Michelle", "Patrice", "Rachel", "Teresa"};
@@ -29,6 +30,9 @@ public class meettheteam extends Fragment {
     "Relief Manager", "Relief Manager", "Resident and Facilities Manager", "Housekeeper","Office Manager","Ronald McDonald Family Room Manager",
     "Housekeeper", "Relief Manager", "Executive Director", "Relief Manager", "Relief Manager", "Administrative Assistant for Development",
             "Relief Manager", "Operations Director", "Marketing and Communications Manager", "Relief Manager"};
+
+    private String[] nametitles = new String[19];
+
 
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerAdapter adapter;
@@ -39,12 +43,16 @@ public class meettheteam extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        for(int i =0; i<name.length;i++){
+            nametitles[i] = name[i] + ": " + titles[i];
+        }
+
         mynewView = inflater.inflate(R.layout.meet_the_team,container,false);
         meetteamrecyclerView = mynewView.findViewById(R.id.meettheteamrecyclerView);
         layoutManager = new LinearLayoutManager(getActivity());
         meetteamrecyclerView.setHasFixedSize(true);
         meetteamrecyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images,name);
+        adapter = new RecyclerAdapter(images,nametitles);
         meetteamrecyclerView.setAdapter(adapter);
         return mynewView;
 

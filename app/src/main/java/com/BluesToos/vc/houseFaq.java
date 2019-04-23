@@ -11,18 +11,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 public class houseFaq extends Fragment {
 
     View myView;
-    TextView textView1,textView2,textView3,textView4,textView5,textView6;
 
+    PDFView pdfview1;
 
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,@Nullable Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.house_faq,container,false);
-        TextView textView1 = (TextView)getView().findViewById(R.id.);
+
+       // pdfview1 = (PDFView) getView().findViewById(R.id.pdfviewer1);
+       // pdfview1.fromAsset("faqs.pdf").load();
+
         return myView;
+
     }
 }

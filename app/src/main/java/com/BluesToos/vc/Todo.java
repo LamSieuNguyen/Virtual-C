@@ -21,6 +21,14 @@ public class Todo extends Fragment {
 
     private String[] name = {"Butterfly Garden", "Hershey Candy Lane", "Hershey Park", "Hershey Stadium", "ZooAmerica"};
 
+    private String[] url = {"http://www.hersheypark.com/ ", "http://www.zooamerica.com/", "https://www.hersheys.com/chocolateworld/en_us/home.html",
+    "https://hersheystory.org/", "https://www.hersheygardens.org/"," http://www.hersheyentertainment.com/hershey-theatre/","http://www.hersheyentertainment.com/giant-center/"
+    , " http://www.hersheyentertainment.com/hersheypark-stadium/", " https://www.adventurehershey.com/","http://www.hersheybears.com/",
+    " https://www.hersheytrolleyworks.com/", "http://www.hersheypark.com/info/hours/sweet-lights.php"," https://www.aacamuseum.org/",
+    ""};
+
+    private String[] nametitles = new String[19];
+
 
     private RecyclerView.LayoutManager layoutManager;
 
@@ -30,12 +38,18 @@ public class Todo extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        for(int i =0; i<name.length;i++){
+            nametitles[i] = name[i] + ": " + url[i];
+        }
+
+
         mynewView = inflater.inflate(R.layout.things_to_do,container,false);
         thingstodorecyclerView = mynewView.findViewById(R.id.thingstodorecyclerView);
         layoutManager = new LinearLayoutManager(getActivity());
         thingstodorecyclerView.setHasFixedSize(true);
         thingstodorecyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images,name);
+        adapter = new RecyclerAdapter(images,nametitles);
         thingstodorecyclerView.setAdapter(adapter);
 
         return mynewView;
