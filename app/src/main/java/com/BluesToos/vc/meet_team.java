@@ -51,7 +51,7 @@ public class meet_team extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         meetteamrecyclerView.setHasFixedSize(true);
         meetteamrecyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images,nametitles, titles, titles,titles,this.getContext());
+        adapter = new RecyclerAdapter(images,nametitles,this.getContext());
         meetteamrecyclerView.setAdapter(adapter);
         return mynewView;
 

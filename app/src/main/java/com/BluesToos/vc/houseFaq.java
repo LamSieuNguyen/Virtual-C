@@ -15,20 +15,30 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class houseFaq extends Fragment {
 
-    View myView;
+    View myView2;
 
-    PDFView pdfview1;
+    private RecyclerView recyclerView;
 
+    private String[] Qs = {"The question is how the fuck does this work","How do you kill yourself?","Do I hate my life?"};
+    private String[] As = {"The answer is it doesn't","Noose, gun, poisen or slitting your wrists","Absofuckinglutely!!"};
+
+    private RecyclerView.LayoutManager layoutManager;
+
+    private RecyclerAdapter adapter;
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,@Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.house_faq,container,false);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        myView2 = inflater.inflate(R.layout.neighborhood_guide,container,false);
+        //getActivity().setContentView(R.layout.activity_main);
+        recyclerView = myView2.findViewById(R.id.recyclerView);
+        layoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(layoutManager);
 
-       // pdfview1 = (PDFView) getView().findViewById(R.id.pdfviewer1);
-       // pdfview1.fromAsset("faqs.pdf").load();
+        adapter = new RecyclerAdapter(Qs, As, this.getContext());
 
-        return myView;
-
+        recyclerView.setAdapter(adapter);
+        return myView2;
     }
 }

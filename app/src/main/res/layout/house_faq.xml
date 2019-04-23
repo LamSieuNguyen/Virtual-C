@@ -11,14 +11,10 @@
     android:scrollbarAlwaysDrawVerticalTrack="true"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="451dp"
-        android:layout_height="677dp"
-        android:scrollbars="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/newhousefaq"
-        tools:layout_editor_absoluteY="0dp" />
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </android.support.constraint.ConstraintLayout>
