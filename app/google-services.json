@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912822654323",
+    "firebase_url": "https://virtual-concierge-48773.firebaseio.com",
+    "project_id": "virtual-concierge-48773",
+    "storage_bucket": "virtual-concierge-48773.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912822654323:android:3cd9adf207d5e033",
+        "android_client_info": {
+          "package_name": "com.BluesToos.vc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912822654323-j27vuqqbk0426l8s9epbscu1j071fkml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.BluesToos.vc",
+            "certificate_hash": "14d1889d2076c24eeafb9c3397a097af0c9986be"
+          }
+        },
+        {
+          "client_id": "912822654323-n2q96bmj4s43mvuuikm63qeouvlf054r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAmL9Ot9KH9eqkPd-ydADPCVRDHB5dZCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912822654323-n2q96bmj4s43mvuuikm63qeouvlf054r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
