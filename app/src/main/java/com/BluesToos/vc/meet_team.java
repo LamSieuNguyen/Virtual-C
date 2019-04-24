@@ -9,13 +9,17 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class meet_team extends Fragment {
 
     View myView;
+    ListView myListView;
     View mynewView;
 
-    private RecyclerView meetteamrecyclerView;
     private int[] images = {R.drawable.alyssa, R.drawable.amy,
             R.drawable.bonnie,R.drawable.brenda, R.drawable.whitebackground, R.drawable.colin,
             R.drawable.whitebackground,R.drawable.debs,R.drawable.heidi,R.drawable.iona,R.drawable.jen,
@@ -30,18 +34,13 @@ public class meet_team extends Fragment {
             "Housekeeper", "Relief Manager", "Executive Director", "Relief Manager", "Relief Manager", "Administrative Assistant for Development",
             "Relief Manager", "Operations Director", "Marketing and Communications Manager", "Relief Manager"};
 
-    private String[] nametitles = new String[19];
-
-
-    private RecyclerView.LayoutManager layoutManager;
-    private RecyclerAdapter adapter;
 
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+/*
         for(int i =0; i<name.length;i++){
             nametitles[i] = name[i] + ": " + titles[i];
         }
@@ -52,8 +51,46 @@ public class meet_team extends Fragment {
         meetteamrecyclerView.setHasFixedSize(true);
         meetteamrecyclerView.setLayoutManager(layoutManager);
         adapter = new RecyclerAdapter(images,nametitles,this.getContext());
-        meetteamrecyclerView.setAdapter(adapter);
-        return mynewView;
+        meetteamrecyclerView.setAdapter(adapter);*/
+        myView = inflater.inflate(R.layout.meet_team, container, false);
+
+        CustomAdapter customAdapter = new CustomAdapter();
+        myListView =  myView.findViewById(R.id.Teamlist);
+        myListView.setAdapter(customAdapter);
+        return myView;
 
     }
+    class CustomAdapter extends BaseAdapter{
+        @Override
+
+        public int getCount()
+        {
+            return images.length;
+        }
+        @Override
+        public Object getItem(int position)
+        {
+            return null;
+        }
+        @Override
+        public long getItemId(int position)
+        {
+            return 0;
+        }
+        public View getView(int position, View concertView, ViewGroup parent)
+        {
+            View view = getLayoutInflater().inflate(R.layout.list_image,null);
+            ImageView myImageView = (ImageView) view.findViewById(R.id.TeamPic);
+            TextView myTextView = (TextView) view.findViewById(R.id.Teamnames);
+            TextView myTextView2 = (TextView) view.findViewById(R.id.Disc);
+
+            myImageView.setImageResource(images[position]);
+            myTextView.setText(name[position]);
+            myTextView2.setText(titles[position]);
+
+            return view;
+        }
+
+    }
+
 }
