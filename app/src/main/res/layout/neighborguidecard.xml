@@ -64,21 +64,102 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="150dp"
                         android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
-
                         >
                         <android.support.v7.widget.CardView
+
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight ="1"
                             android:gravity ="center"
                             android:orientation="vertical"
-
-
-
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
                             >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/colorGold"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:id="@+id/cView1"
+                                android:layout_height="100dp"
+                                android:src = "@drawable/wellsfargo">
+
+                            </ImageView>
+"
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wells Fargo"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/cView1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/cButton"
+                                android:background="@android:color/transparent"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView10"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView10"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton10"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
 
 
 
@@ -86,9 +167,321 @@
 
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView0"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView0"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton0"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
 
 
 
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView2"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView3"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton3"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView4"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView4"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton4"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView31"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView31"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton31"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight ="1"
+                            android:gravity ="center"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/colorGold"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/cView41"
+                                    android:layout_height="100dp"
+                                    android:src = "@drawable/wellsfargo">
+
+                                </ImageView>
+                                "
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wells Fargo"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_below="@+id/cView41"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+
+                                    />
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/cButton41"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
                 </LinearLayout>
             </RelativeLayout>
 

@@ -40,18 +40,8 @@ public class meet_team extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-/*
-        for(int i =0; i<name.length;i++){
-            nametitles[i] = name[i] + ": " + titles[i];
-        }
 
-        mynewView = inflater.inflate(R.layout.meet_the_team,container,false);
-        meetteamrecyclerView = mynewView.findViewById(R.id.meettheteamrecyclerView);
-        layoutManager = new LinearLayoutManager(getActivity());
-        meetteamrecyclerView.setHasFixedSize(true);
-        meetteamrecyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(images,nametitles,this.getContext());
-        meetteamrecyclerView.setAdapter(adapter);*/
+
         myView = inflater.inflate(R.layout.meet_team, container, false);
 
         CustomAdapter customAdapter = new CustomAdapter();

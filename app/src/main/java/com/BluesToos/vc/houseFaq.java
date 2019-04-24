@@ -50,7 +50,7 @@ public class houseFaq extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView2 = inflater.inflate(R.layout.neighborhood_guide,container,false);
+        myView2 = inflater.inflate(R.layout.house_faq,container,false);
         //getActivity().setContentView(R.layout.activity_main);
         recyclerView = myView2.findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(getActivity());
