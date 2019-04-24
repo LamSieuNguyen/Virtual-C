@@ -65,18 +65,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if (type == 1) {
-            Log.d(TAG,"CASE 1 Create vH");
+
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
             return new ImageViewHolder(view);
 
         }
         if(type == 2) {
-            Log.d(TAG,"CASE 2 Create vH");
+
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item2, parent, false);
             return new ImageViewHolder(view);
         }
         else{
-            Log.d(TAG,"CASE 3 Create vH");
+
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item3, parent, false);
             return new ImageViewHolder(view);
         }
@@ -87,16 +87,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
         switch(type) {
             case 1:
             int image_id = images[position];
-            Log.d(TAG,"CASE 1 BIND VIEW");
+
             holder.Album.setImageResource(image_id);
             holder.AlbumTitle.setText(names[position]);
             holder.ll.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Log.d("TAG?", "THIS WORKED YAYYYYYYYYYYYYYYYYYY");
+
                     //start new activity
                     //Intent mapIntent = new Intent(this, guideActivity.class);
-                    Log.d("run", "crashed");
+
                     Bundle bundle = new Bundle();
                     bundle.putIntArray("images", images);
                     bundle.putStringArray("names", names);
@@ -105,14 +105,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
                     bundle.putStringArray("nums", nums);
                     bundle.putInt("pos", position);
 
-                    Log.d(TAG, "Bundle: " + bundle);
+
 
 
                     guideActivity sendto = new guideActivity();
                     sendto.setArguments(bundle);
 
 
-                    Log.d(TAG, "ST: " + sendto.toString());
+
 
                     FragmentManager manager = ((MainActivity) mContext).getSupportFragmentManager();
                     manager.beginTransaction().replace(R.id.content_frame, sendto).commit();
@@ -123,13 +123,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
             });
             break;
             case 2:
-                Log.d(TAG,"CASE 2 BIND VIEW");
+
                 int image_id2 = images[position];
                 holder.Album.setImageResource(image_id2);
                 holder.AlbumTitle.setText(names[position]);
                 break;
             case 3:
-                Log.d(TAG,"CASE 3 BIND VIEW: " + names[position]);
+
                 int image_id3 = images[0];
                 holder.Album.setImageResource(image_id3);
                 holder.AlbumTitle.setText(names[position]);
