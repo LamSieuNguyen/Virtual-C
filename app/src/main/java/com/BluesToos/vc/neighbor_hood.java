@@ -58,6 +58,7 @@ public class neighbor_hood extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.neighborhood_guide,container,false);
         //getActivity().setContentView(R.layout.activity_main);
+
         recyclerView = myView.findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setHasFixedSize(true);
@@ -66,6 +67,7 @@ public class neighbor_hood extends Fragment {
         adapter = new RecyclerAdapter(images, names, locs, webs, phones, this.getContext());
 
         recyclerView.setAdapter(adapter);
+
         return myView;
     }
 }

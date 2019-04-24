@@ -96,6 +96,7 @@
             android:gravity="center"
             android:padding="18dp"
 
+
             android:scaleType="fitCenter"
             android:shadowColor="#A8A8A8"
             android:shadowDx="0"
@@ -106,7 +107,8 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/locButton" />
+            app:layout_constraintTop_toBottomOf="@id/locButton"
+            />
 
         <Button
             android:id="@+id/webButton"
