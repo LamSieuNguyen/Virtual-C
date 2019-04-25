@@ -13,7 +13,7 @@
 
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.BluesToos.VirtC.MainActivity"
             android:label="Virtual Concierge"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" >
@@ -26,13 +26,13 @@
 
         </activity>
         <service
-            android:name=".MyFirebaseMessagingService">
+            android:name="com.BluesToos.VirtC.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
         <service
-            android:name=".GettingDeviceTokenService"
+            android:name="com.BluesToos.VirtC.GettingDeviceTokenService"
             android:enabled="true"
             android:exported="true"></service>
 

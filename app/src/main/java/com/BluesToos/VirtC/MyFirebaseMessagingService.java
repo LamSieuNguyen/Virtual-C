@@ -1,25 +1,18 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import com.BluesToos.vc.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-
-import java.util.ArrayList;
-
-import static android.support.v4.content.ContextCompat.getSystemService;
-import static com.BluesToos.vc.notifications.messages;
-import static com.BluesToos.vc.notifications.titles;
 
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -35,8 +28,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Log.d("DATA","GETTING DATA");
         String titlem = remoteMessage.getNotification().getTitle();
         String messagem = remoteMessage.getNotification().getBody();
-        titles.add(titlem);
-        messages.add(messagem);
+        notifications.titles.add(titlem);
+        notifications.messages.add(messagem);
         Log.d("title","title" + titlem);
         Log.d("message","message" + messagem);
         Intent intent = new Intent("edu.fandm.pweiser.notes_FCMMESSAGE");

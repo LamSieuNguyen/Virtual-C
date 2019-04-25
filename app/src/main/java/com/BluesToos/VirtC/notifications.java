@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -16,6 +16,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.BluesToos.vc.R;
 
 import java.util.ArrayList;
 

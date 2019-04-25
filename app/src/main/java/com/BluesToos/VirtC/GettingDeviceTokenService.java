@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.app.Service;
 import android.content.Intent;

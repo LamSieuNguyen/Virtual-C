@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -8,15 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class house_rules extends Fragment {
+import com.BluesToos.vc.R;
+
+public class religious_org extends Fragment {
 
     View myView;
+    // unused
 
-    //Unused
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.house_rules,container,false);
+        myView = inflater.inflate(R.layout.religious_org,container,false);
         return myView;
     }
 }

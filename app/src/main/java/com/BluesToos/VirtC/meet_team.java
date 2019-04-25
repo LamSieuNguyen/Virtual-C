@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.BluesToos.vc.R;
 
 public class meet_team extends Fragment {
 

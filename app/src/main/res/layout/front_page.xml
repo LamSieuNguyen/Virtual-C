@@ -15,7 +15,6 @@
         android:layout_width="fill_parent"
         android:layout_weight="0.1"
         android:layout_height="0dp"
-        android:background="@drawable/backronald"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/LLID"
 

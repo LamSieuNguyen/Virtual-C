@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.BluesToos.vc.R;
 
 public class guideActivity extends Fragment {
 

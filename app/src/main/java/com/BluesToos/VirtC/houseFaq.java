@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -9,9 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.github.barteksc.pdfviewer.PDFView;
+import com.BluesToos.vc.R;
 
 public class houseFaq extends Fragment {
 

@@ -1,4 +1,4 @@
-package com.BluesToos.vc;
+package com.BluesToos.VirtC;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,15 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class medcenter extends Fragment {
+import com.BluesToos.vc.R;
+
+public class calendar extends Fragment {
 
     View myView;
 
-    // unused
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.ps_health_center_info,container,false);
+        myView = inflater.inflate(R.layout.calendar,container,false);
         return myView;
     }
 }
