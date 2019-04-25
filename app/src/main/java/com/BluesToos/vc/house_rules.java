@@ -12,7 +12,7 @@ public class house_rules extends Fragment {
 
     View myView;
 
-
+    //Unused
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

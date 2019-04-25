@@ -22,7 +22,7 @@
         <item
             android:id="@+id/house_faq"
             android:icon="@drawable/faqs"
-            android:title="House Faqs" />
+            android:title="House FAQs" />
         <item
             android:id="@+id/prog_disc"
             android:icon="@drawable/document"

@@ -20,6 +20,8 @@ public class meet_team extends Fragment {
     ListView myListView;
     View mynewView;
 
+    // Lists of the data that is displayed
+
     private int[] images = {R.drawable.alyssa, R.drawable.amy,
             R.drawable.bonnie,R.drawable.brenda, R.drawable.whitebackground, R.drawable.colin,
             R.drawable.whitebackground,R.drawable.debs,R.drawable.heidi,R.drawable.iona,R.drawable.jen,
@@ -39,6 +41,8 @@ public class meet_team extends Fragment {
 
     @Nullable
     @Override
+
+    // creates the view
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
@@ -50,6 +54,8 @@ public class meet_team extends Fragment {
         return myView;
 
     }
+
+    //Creates the custom view, setting all the data in the custom view
     class CustomAdapter extends BaseAdapter{
         @Override
 

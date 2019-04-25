@@ -10,6 +10,7 @@ import com.google.firebase.iid.FirebaseInstanceIdService;
 
 public class GettingDeviceTokenService extends FirebaseInstanceIdService {
 
+    // This was needed for Notifications, doesn't really do anything
     @Override
     public void onTokenRefresh() {
         String DeviceToken = FirebaseInstanceId.getInstance().getToken();

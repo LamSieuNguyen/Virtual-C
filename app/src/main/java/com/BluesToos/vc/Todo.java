@@ -15,6 +15,8 @@ public class Todo extends Fragment {
     View myView;
     View mynewView;
 
+    // all of the data
+
     private RecyclerView thingstodorecyclerView;
     private int[] images = {R.drawable.butterfly, R.drawable.newhersheycandylane,
             R.drawable.hersheypark,R.drawable.newhersheystadium, R.drawable.newzooamerica, R.drawable.hersheyschocolateworld, R.drawable.thehersheystory, R.drawable.hersheygardens, R.drawable.hersheytheatre, R.drawable.giantcenter, R.drawable.adventuresports, R.drawable.hersheybearshockey, R.drawable.hersheytrolley, R.drawable.hersheysweetlights, R.drawable.aacamuseum, R.drawable.indianechocave, R.drawable.challengefamilyfun, R.drawable.challengefamilyfun, R.drawable.cocoacastle, R.drawable.eshenourmemorialtrail, R.drawable.generalinfo};
@@ -33,6 +35,7 @@ public class Todo extends Fragment {
     private RecyclerAdapter adapter;
 
 
+    // Sends all of the data to be created in a recycler view
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -24,6 +24,8 @@ import static com.BluesToos.vc.notifications.titles;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
+
+    //This handles recieving the data for a notification while the app is opened
     public static int NOTIFICATION_ID = 1;
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
@@ -45,15 +47,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         //OnCreate();
 
         //}
-        generateNotification(remoteMessage.getData().get("title"),remoteMessage.getData().get("message"));
+        generateNotification(remoteMessage.getNotification().getTitle(),remoteMessage.getNotification().getBody());
 
 
     }
 
+    //This displays the notification
     private void generateNotification(String body, String title) {
         Log.d("generateNotification","GENERATING NOTE");
-        Intent intent = new Intent(this,MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Intent intent = new Intent(this,notifications.class);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_ONE_SHOT);
         Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);

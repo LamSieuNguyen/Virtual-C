@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 public class religious_org extends Fragment {
 
     View myView;
-
+    // unused
 
     @Nullable
     @Override

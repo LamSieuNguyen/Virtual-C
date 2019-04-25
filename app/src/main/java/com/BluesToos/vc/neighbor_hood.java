@@ -14,6 +14,8 @@ public class neighbor_hood extends Fragment {
 
     View myView;
 
+    //All of the data needed fo rht neighborhood tab
+
     private RecyclerView recyclerView;
     private int[] images = {R.drawable.members1,R.drawable.metro, R.drawable.wellsfargo,R.drawable.hersheypharmacy,
             R.drawable.weispharm,R.drawable.newgiant,R.drawable.mcdonalds,R.drawable.piazzasorrento,R.drawable.subbway,R.drawable.friendlys,
@@ -53,6 +55,8 @@ public class neighbor_hood extends Fragment {
 
     private RecyclerAdapter adapter;
 
+
+    //Creates the view
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

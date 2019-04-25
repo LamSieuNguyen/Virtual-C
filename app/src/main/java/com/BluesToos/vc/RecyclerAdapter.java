@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageViewHolder> {
 
@@ -26,12 +28,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
     private String[] as;
     public View myView;
     public Context mContext;
+    private ArrayList<String> titles;
+    private ArrayList<String> notes;
 
     private static int type;
 
 
 
-
+    // different methods so the adapter can be called and have different layouts
 
     public RecyclerAdapter(int[] images, String[] names, String[] locs, String[] webs, String[] nums, Context context) {
         type = 1;
@@ -58,9 +62,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
         mContext = context;
     }
 
+    public RecyclerAdapter(int[] images, ArrayList<String> names, ArrayList<String> as, Context context){
+        type = 4;
+        this.images = images;
+        this.notes = as;
+        this.titles = names;
+
+    }
+
     public int getItemViewType(int type){
         return type;
     }
+
+    //Creates the correct layout for the recycler view
 
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -75,6 +89,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item2, parent, false);
             return new ImageViewHolder(view);
         }
+        if(type == 3){
+
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item3, parent, false);
+            return new ImageViewHolder(view);
+        }
         else{
 
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item3, parent, false);
@@ -82,6 +101,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
         }
     }
 
+    // Sets all of the data for the recycler view
     @Override
     public void onBindViewHolder(ImageViewHolder holder, final int position) {
         switch(type) {
@@ -135,6 +155,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
                 holder.AlbumTitle.setText(names[position]);
                 holder.Ans.setText(as[position]);
                 break;
+
+            case 4:
+                int image_id4 = images[0];
+                holder.Album.setImageResource(image_id4);
+                holder.AlbumTitle.setText(titles.get(position));
+                holder.Ans.setText(notes.get(position));
+                break;
         }
 
 
@@ -144,7 +171,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ImageV
 
     @Override
     public int getItemCount() {
-        return names.length;
+        if (names!=null) {
+            return names.length;
+        }
+        else if(notes!=null){
+            return notes.size();
+        }
+        else{
+            return 0;
+        }
     }
 
     public static class ImageViewHolder extends RecyclerView.ViewHolder {
