@@ -36,7 +36,7 @@ public class guideActivity extends Fragment {
         myView = inflater.inflate(R.layout.guideactivity, container, false);
 //make bundles to send inforamation when going to other activities. For the things to do and the neighborguide.
         Bundle bundle = getArguments();
-        Log.d(TAG,"BUNDLE: " + bundle);
+
         int pos = getArguments().getInt("pos");
         String[] names = getArguments().getStringArray("names");
         String[] locs = getArguments().getStringArray("locs");
