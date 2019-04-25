@@ -16,13 +16,17 @@ import com.github.barteksc.pdfviewer.PDFView;
 public class houseFaq extends Fragment {
 
     View myView2;
+//Initialize the titles and information then send them to a recycler view
 
     private RecyclerView recyclerView;
 
-
+//THe headers
     private String[] Qs = {"What is your Wi-Fi password?","Where can I put my trash? ","Where can I smoke?","How can I support RMHC-CP?","How can I sign up to volunteer for the guest chef, baking or lunch programs?"
     ,"How do I confirm my room on the first day I’d like to stay?","Why can’t I have food in my room?","When does the shuttle come?","When I am ready to check out, what do I have to do?",
             "How can I request a room if I need to come back? "};
+
+
+    // THe information text for the headers
     private String[] As = {"Wi-Fi is “Wayport”.  There is no password required","There are trash cans at the end of each hallway." +
             "  Please take dirty diapers and other smelly/wet garbage outside." +
             "  There is a trash can outside the front door, and a dumpster at the edge of the parking lot."
@@ -50,6 +54,7 @@ public class houseFaq extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        //sends info to recycle view so data is connected correctly
         myView2 = inflater.inflate(R.layout.house_faq,container,false);
         //getActivity().setContentView(R.layout.activity_main);
         recyclerView = myView2.findViewById(R.id.recyclerView);

@@ -29,7 +29,7 @@ public class front_page extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.front_page, container, false);
-
+//get the buttons for locations, phone numbers and website urls
         loc = myView.findViewById(R.id.locButton);
         num = myView.findViewById(R.id.phoneButton);
         web = myView.findViewById(R.id.webButton);
@@ -37,11 +37,11 @@ public class front_page extends Fragment {
         address = myView.findViewById(R.id.LocationTV);
         phoneNumber = myView.findViewById(R.id.NumberTV);
         webUrl = myView.findViewById(R.id.UrlTV);
-
+// get the text for the loc, num and urls
         final String strLoc = address.getText().toString();
         final String strNum = phoneNumber.getText().toString();
         final String strURL = webUrl.getText().toString();
-
+//make buttons do corresponding action when clicked for numbers, URL and locations
         loc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
@@ -65,7 +65,7 @@ public class front_page extends Fragment {
         web.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Uri uri = Uri.parse("http://www." + strURL); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse("" + strURL); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }

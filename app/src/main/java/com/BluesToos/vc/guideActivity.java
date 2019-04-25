@@ -34,7 +34,7 @@ public class guideActivity extends Fragment {
         //super.onCreate(savedInstanceState);
 
         myView = inflater.inflate(R.layout.guideactivity, container, false);
-
+//make bundles to send inforamation when going to other activities. For the things to do and the neighborguide.
         Bundle bundle = getArguments();
         Log.d(TAG,"BUNDLE: " + bundle);
         int pos = getArguments().getInt("pos");
@@ -46,11 +46,11 @@ public class guideActivity extends Fragment {
 
         ImageView pic = myView.findViewById(R.id.menuPic);
         pic.setImageResource(images[pos]);
-
+// Find the buttons
         loc = myView.findViewById(R.id.locButton);
         num = myView.findViewById(R.id.phoneButton);
         web = myView.findViewById(R.id.webButton);
-
+//set values to the textviews
         address = myView.findViewById(R.id.LocationTV);
         address.setText(locs[pos]);
         phoneNumber = myView.findViewById(R.id.NumberTV);

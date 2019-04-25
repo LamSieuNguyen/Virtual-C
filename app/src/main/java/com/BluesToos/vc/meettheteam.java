@@ -15,7 +15,7 @@ public class meettheteam extends Fragment {
 
     View myView;
     View mynewView;
-
+//Initialize the names and job titles to a list then send them to a recycler view
     private RecyclerView meetteamrecyclerView;
     private int[] images = {R.drawable.alyssa, R.drawable.amy,
             R.drawable.bonnie,R.drawable.brenda, R.drawable.whitebackground, R.drawable.colin,
